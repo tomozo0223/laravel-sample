@@ -24,7 +24,7 @@ class PostFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->name(),
+            'title' => fake()->realText(10),
             'body' => fake()->realText(50),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
