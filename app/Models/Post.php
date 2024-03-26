@@ -23,4 +23,11 @@ class Post extends Model
         $post = DB::table('posts')->where('created_at', '2024-03-17 06:17:42')->first();
         return $post;
     }
+
+    //カラム値のリストの取得
+    public function getList()
+    {
+        $posts = DB::table('posts')->pluck('title', 'body')->toArray();
+        return $posts;
+    }
 }
