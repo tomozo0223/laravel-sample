@@ -23,13 +23,13 @@
             </tr>
         </thead>
         <tbody>
-            {{-- @foreach ($posts as $post) --}}
-            <tr>
-                <td>{{ $posts->title }}</td>
-                <td>{{ $posts->body }}</td>
-                <td>{{ $posts->created_at }}</td>
-            </tr>
-            {{-- @endforeach --}}
+            {{-- @foreach ($posts as $post)
+                <tr>
+                    <td>{{ $post->title }}</td>
+                    <td>{{ $post->body }}</td>
+                    <td>{{ $post->created_at }}</td>
+                </tr>
+            @endforeach --}}
         </tbody>
     </table>
 
